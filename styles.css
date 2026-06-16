@@ -260,7 +260,7 @@ h1 em { color: #c9e478; }
   .container { width: min(100% - 30px,620px); }
   .section { padding: 78px 0; }
   .utility-inner { min-height: 34px; gap: 10px; }
-  .utility-inner p,.utility-inner a { font-size: 8px; }
+  .utility-inner p,.utility-inner a { font-size: 9px; }
   .utility-inner a { padding-left: 0; border: 0; }
   .nav-wrap { min-height: 70px; }
   .brand-mark { width: 38px; height: 38px; }
@@ -279,51 +279,87 @@ h1 em { color: #c9e478; }
   .hero-image { background-position: 65% center; }
   .hero-overlay { background: linear-gradient(90deg,rgba(7,28,20,.94),rgba(7,28,20,.65)),linear-gradient(0deg,rgba(7,28,20,.8),transparent 70%); }
   .hero-copy { width: 100%; padding: 65px 0 135px; }
-  h1 { font-size: clamp(51px,15vw,69px); }
-  .hero-copy > p { font-size: 15px; }
+  h1 { font-size: clamp(55px,16vw,74px); }
+  h1 em { display: inline-block; line-height: .86; }
+  .hero-copy > p { font-size: 16px; line-height: 1.8; }
   .hero-actions { max-width: 330px; flex-direction: column; align-items: stretch; }
-  .hero-trust { flex-wrap: wrap; gap: 10px 17px; }
+  .hero-trust { flex-wrap: wrap; gap: 10px 17px; font-size: 12px; }
   .hero-card { right: -15px; min-width: 290px; padding: 18px 28px 20px 45px; }
+  .button { font-size: 12px; }
   .path-grid { grid-template-columns: 1fr; }
   .path-grid a,.path-grid a:first-child { min-height: 95px; padding: 16px 0; border-left: 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .path-grid small { font-size: 11px; }
+  .path-grid strong { font-size: 17px; }
+  .path-grid b { font-size: 21px; }
   .section-heading,.maintenance-grid,.project-grid,.area-grid,.faq-grid,.estimate-grid { grid-template-columns: 1fr; gap: 48px; }
-  .section-heading h2,.maintenance-copy h2,.project-copy h2,.center-heading h2,.area-copy h2,.reviews-heading h2,.faq-grid h2,.estimate-copy h2 { font-size: 44px; }
+  .section-heading h2,.maintenance-copy h2,.project-copy h2,.center-heading h2,.area-copy h2,.reviews-heading h2,.faq-grid h2,.estimate-copy h2 { font-size: 48px; }
   .service-grid { grid-template-columns: 1fr; }
   .service-card { min-height: 350px; }
+  .service-card h3 { font-size: 22px; }
+  .service-card p { font-size: 15px; }
+  .service-card a { font-size: 11px; }
   .maintenance-section { padding: 85px 0; }
   .maintenance-grid { display: flex; flex-direction: column; }
   .maintenance-image { width: 95%; }
+  .maintenance-image img { object-position: center center; }
   .image-label { right: -5%; }
+  .image-label strong { font-size: 16px; }
+  .image-label span { font-size: 11px; }
   .projects-section { padding-bottom: 105px; }
   .project-grid { display: flex; flex-direction: column; }
   .project-image { width: 100%; }
   .project-stat { left: 12px; }
+  .project-copy li { font-size: 14px; }
+  .project-stat strong { font-size: 20px; }
   .process-grid { grid-template-columns: 1fr 1fr; gap: 43px 0; }
   .process-grid article { padding: 0 17px; }
   .process-grid article::after { display: none; }
+  .process-grid h3 { font-size: 17px; }
+  .process-grid p { font-size: 13px; }
   .season-inner { grid-template-columns: 1fr; gap: 25px; }
   .season-inner .button { justify-self: start; }
+  .season-inner h2 { font-size: clamp(42px,10vw,56px); }
+  .season-inner p { font-size: 15px; }
   .area-panel { min-height: 330px; }
   .area-panel svg { min-height: 330px; }
   .area-panel > div { align-items: flex-start; flex-direction: column; gap: 7px; }
+  .area-copy > p { font-size: 16px; }
+  .area-tags span { font-size: 12px; }
+  .area-panel small { font-size: 11px; }
+  .area-panel a { font-size: 13px; }
   .reviews-heading { display: block; }
   .rating { margin-top: 25px; }
+  .rating > strong { font-size: 46px; }
   .review-grid { grid-template-columns: 1fr; }
   .review-grid blockquote > p { min-height: auto; }
+  .review-grid blockquote > p { font-size: 19px; line-height: 1.7; }
   .review-note { text-align: left; }
   .estimate-form { padding: 29px 20px; }
   .form-title { align-items: flex-start; flex-direction: column; }
+  .estimate-copy > p { font-size: 16px; }
+  .estimate-phone strong { font-size: 24px; }
+  .contact-note { font-size: 9px; }
+  .form-title span { font-size: 22px; }
+  .estimate-form label { font-size: 10px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1/-1; }
+  .footer-brand p { font-size: 13px; }
+  .footer-grid > div:not(.footer-brand) a,.footer-grid > div:not(.footer-brand) span { font-size: 12px; }
+  .footer-phone { font-size: 16px !important; }
   .footer-bottom { flex-direction: column; gap: 12px; }
-  .mobile-action-bar { position: fixed; z-index: 50; inset: auto 0 0; height: 60px; display: grid; grid-template-columns: .8fr 1.2fr; color: white; font-family: var(--sans); font-size: 10px; font-weight: 800; text-transform: uppercase; box-shadow: 0 -8px 24px rgba(14,43,32,.16); }
+  .mobile-action-bar { position: fixed; z-index: 50; inset: auto 0 0; height: 60px; display: grid; grid-template-columns: .8fr 1.2fr; color: white; font-family: var(--sans); font-size: 11px; font-weight: 800; text-transform: uppercase; box-shadow: 0 -8px 24px rgba(14,43,32,.16); }
   .mobile-action-bar a { display: flex; align-items: center; justify-content: center; background: var(--deep); }
   .mobile-action-bar a:last-child { color: var(--deep); background: var(--lime); }
 }
 
 @media (max-width:430px) {
   .hero-trust span { width: 100%; }
+  .hero-copy > p { font-size: 17px; }
+  h1 em { line-height: .82; }
+  .section-heading h2,.maintenance-copy h2,.project-copy h2,.center-heading h2,.area-copy h2,.reviews-heading h2,.faq-grid h2,.estimate-copy h2 { font-size: 50px; }
+  .accordion summary { font-size: 16px; }
+  .accordion details p { font-size: 14px; }
   .process-grid { grid-template-columns: 1fr; }
   .process-grid article { padding-bottom: 27px; border-bottom: 1px solid var(--line); }
   .footer-grid { grid-template-columns: 1fr; }
